@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="utf8">
+  <title>Calculadora Bàsica en Javascript</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+
+<form name="form">
+
+  <h1>Calculadora en Javascript</h1>
+
+  <table>
+  <tr>
+    <td><h2 id="imprimir"></h2></td>
+  </tr>
+    <tr>
+      <td colspan="5"><input type="text" name="valores" id="valores" onkeypress="return solonumeros(event)"></td>
+
+    </tr>
+
+    <tr>
+
+      <td><input type="button" value="7" onClick="retornar(value)"></td>
+      <td><input type="button" value="8" onClick="retornar(value)"></td>
+      <td><input type="button" value="9" onClick="retornar(value)"></td>
+      <td><input type="button" value="+" onclick="comprobar(value)"></td>
+      <td><input type="button" value="-" onclick="comprobar(value)"></td>
+
+    </tr>
+
+    <tr>
+
+      <td><input type="button" value="4" onClick="retornar(value)"></td>
+      <td><input type="button" value="5" onClick="retornar(value)"></td>
+      <td><input type="button" value="6" onClick="retornar(value)"></td>
+      <td><input type="button" value="*" onclick="comprobar(value)"></td>
+      <td><input type="button" value="/" onclick="comprobar(value)"></td>
+
+    </tr>
+
+    <tr>
+      <td><input type="button" value="1" onClick="retornar(value)"></td>
+      <td><input type="button" value="2" onClick="retornar(value)"></td>
+      <td><input type="button" value="3" onClick="retornar(value)"></td>
+      <td><input type="button" value="<-" onclick="eliminar()"></td>
+      <td><input type="button" value="C" onclick="eliminar_todo()"></td>
+    </tr>
+
+    <tr>
+      <td colspan="2"><input type="button" value="0" onClick="retornar(value)"></td>
+      <td></td>
+      <td colspan="2"><input type="button" value="=" onClick="calcular()"></td>
+    </tr>
+
+    <tr>
+      <td><input type="button" value="Factorial" onClick="factorial()"></td>
+
+      <td><input type="button" value="Par - Impar" onClick="parimpar()"></td>
+    </tr>
+
+  </table>
+</form>
+
+</body>
+</html>
