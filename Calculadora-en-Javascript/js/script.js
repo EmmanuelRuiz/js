@@ -11,7 +11,7 @@ function solonumeros(e){
     //fromcharcode = display the character of the specified unicode number
     teclado=String.fromCharCode(key);
     //numeros aceptados
-    numeros="0123456789";
+    numeros="0123456789.e";
     //caracteres especiales
     //8 tecla barra 37 izq 39 der 46
     especiales="8-37-39-46";
@@ -139,5 +139,16 @@ function parimpar(){
     } else {
         document.getElementById("imprimir").innerHTML = "Es Impar";
     }
+}
+
+function exponencial(){
+    var numero = 7.55;
+    alert(numero);
+    var n = numero.toExponential(3);
+
+    alert(n);
+    //    document.form.valores.value = n;
+
+    document.getElementById("valores").innerHTML = n;
 }
 
