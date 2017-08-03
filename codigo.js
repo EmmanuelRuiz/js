@@ -6,4 +6,6 @@ var fecha = new Date();
 console.log(fecha);
 var fecha2 = new Date(2017,5,15);
 
-console.log(fecha2);
+
+
+console.log(Math.sin(90 * Math.PI/180));
